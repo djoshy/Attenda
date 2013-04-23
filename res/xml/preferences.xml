@@ -1,0 +1,41 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Schedule">
+
+        <Preference
+                android:key="setup_schedule"
+                android:title="Setup"
+                android:summary="Create a new timetable or edit the existing one." />
+         <Preference
+                android:key="setup_subjects"
+                android:title="Subjects"
+                android:summary="Add or edit the list of existing subjects." />
+        
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Notifications">
+		
+        
+        <CheckBoxPreference
+                android:key="remindcheckbox_preference"
+                android:title="Reminders"
+                android:summary="Enabling this reminds you to fill in the attendance."/>
+        <ListPreference
+				android:dialogTitle="Select..."
+				android:entries="@array/durations"
+				android:entryValues="@array/durationentries"
+				android:key="listremindpref"
+				android:summary="Select the frequency of reminders."
+				android:title="Reminder Frequency"/>    
+        <CheckBoxPreference
+                android:key="alertcheckbox_preference"
+                android:title="Alerts"
+                android:summary="Enabling this alerts you incase of low attendance."/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="durations">
+<item>You have no choice! Atleast, as of now :)</item>
+</string-array>
+<string-array name="durationentries">
+<item>Nothing to see here</item>
+
+
+</string-array>
+</resources>
